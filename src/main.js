@@ -100,11 +100,11 @@ const setupUI = () => {
         switchSection(document.querySelector(".is-visible"), sctnAbout);
     }
 
-    h3cred.onclick = () => {
+    infoCred.onclick = () => {
         revealText(pCred, infoCred, "17em", "500px", "750px");
     }
 
-    h3bias.onclick = () => {
+    infoBias.onclick = () => {
         revealText(pBias, infoBias, "15em", "1125px", "850px");
     }
 }
