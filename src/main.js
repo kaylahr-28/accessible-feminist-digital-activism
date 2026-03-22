@@ -1,7 +1,6 @@
 
 const init = () => {
-    //setupUI();
-    test();
+    setupUI();
 
 }
 
@@ -101,26 +100,12 @@ const setupUI = () => {
         switchSection(document.querySelector(".is-visible"), sctnAbout);
     }
 
-
-
-}
-
-const test = () => {
-    const h3cred = document.querySelector("#h3-cred");
-    const h3bias = document.querySelector("#h3-bias");
-    const pCred = document.querySelector("#p-cred");
-    const pBias = document.querySelector("#p-bias");
-    const infoCred = document.querySelector("#info-cred");
-    const infoBias = document.querySelector("#info-bias");
-
     h3cred.onclick = () => {
-
-     revealText(pCred, infoCred, "17em", "500px", "750px");
+        revealText(pCred, infoCred, "17em", "500px", "750px");
     }
 
     h3bias.onclick = () => {
-    revealText(pBias, infoBias, "15em", "1125px", "850px");
-
+        revealText(pBias, infoBias, "15em", "1125px", "850px");
     }
 }
 
@@ -147,7 +132,6 @@ const revealText = (para, info, em, height, width) => {
         info.style.marginRight = em;
     } else {
         info.style.marginLeft = em;
-
     }
 
     info.style.height = height;

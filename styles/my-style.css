@@ -83,11 +83,9 @@ a {
 
 section {
     margin: 2em auto;
-    
-    /*
     visibility: hidden;
     display: none;
-    opacity: 0;*/
+    opacity: 0;
     text-align: center;
     transition: opacity 0.5s ease-in-out;
 
