@@ -45,6 +45,20 @@ body {
     }
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
 
 @keyframes fadeOut {
     0% {
@@ -92,7 +106,7 @@ section {
     justify-items: center;
 }
 
-section p{
+section p {
     max-width: 1100px;
 }
 
@@ -157,7 +171,9 @@ button,
 #btn-present,
 nav a,
 #h3-cred,
-#h3-bias,sup, ol li a {
+#h3-bias,
+sup,
+ol li a {
     cursor: pointer;
 }
 
@@ -303,37 +319,51 @@ nav a:hover {
     padding-top: 0;
 }
 
-#ol-present, .sctn-cite ol{
-    max-width:1000px;
+#ol-present,
+.sctn-cite ol {
+    max-width: 1000px;
 }
 
-#li1-present,#li2-present, #li3-present,
-#src1,#src3,#src5,#src7,#src9,#src11,
+#li1-present,
+#li2-present,
+#li3-present,
+#src1,
+#src3,
+#src5,
+#src7,
+#src9,
+#src11,
 #src2,
 #src4,
 #src6,
 #src8,
 #src10,
-#src12{
+#src12 {
     background-color: #218380;
     list-style-position: inside;
     padding: 1em;
     font-weight: 500;
 }
 
-#li2-present,#src2,#src4,#src6,#src8,#src10,#src12,
+#li2-present,
+#src2,
+#src4,
+#src6,
+#src8,
+#src10,
+#src12,
 #src2 a,
 #src4 a,
 #src6 a,
 #src8 a,
 #src10 a,
-#src12 a{
+#src12 a {
     background-color: #17183B;
     color: #218380;
 }
 
 sup {
-    font-weight:600;
+    font-weight: 600;
 }
 
 sup:hover {
@@ -345,18 +375,54 @@ sup:hover {
 #src5 a:hover,
 #src7 a:hover,
 #src9 a:hover,
-#src11 a:hover, 
+#src11 a:hover,
 #src2 a:hover,
 #src4 a:hover,
 #src6 a:hover,
 #src8 a:hover,
 #src10 a:hover,
 #src12 a:hover,
-#info-bias sup:hover{
-    color:#D6D1CD;
+#info-bias sup:hover {
+    color: #D6D1CD;
 }
 
-.sctn-cite ol{
+.sctn-cite ol {
     list-style: none;
 }
 
+#img-grid {
+    display: grid;
+    grid-template-areas: "globe globe globe"
+        "insta phone twitter";
+    grid-template-columns: 50px 500px 50px;
+    grid-template-rows: 50px 350px;
+}
+
+#img-phone {
+    width: 500px;
+    grid-area: phone;
+    animation: rotate 5s infinite;
+}
+
+#img-insta,
+#img-twitter,
+#img-globe {
+    width: 50px;
+    align-self: center;
+    animation: float 4s linear infinite;
+}
+
+#img-insta {
+    grid-area: insta;
+animation-delay: -.5s;
+}
+
+#img-twitter {
+    grid-area: twitter;
+    animation-delay: -1s;
+}
+
+#img-globe {
+    grid-area: globe;
+    justify-self: center;
+}
