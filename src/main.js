@@ -1,6 +1,6 @@
 
 const init = () => {
-    setupUI();
+   // setupUI();
 
 }
 
