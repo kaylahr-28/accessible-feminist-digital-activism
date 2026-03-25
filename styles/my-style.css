@@ -97,11 +97,11 @@ a {
 
 section {
     margin: 2em auto;
-    /*
+    
     visibility: hidden;
     display: none;
     opacity: 0;
-*/
+
     text-align: center;
     transition: opacity 0.5s ease-in-out;
 
@@ -436,4 +436,8 @@ animation-delay: -.5s;
     float:right;
     margin-left:1.5em;
     margin-top:0;
+}
+
+.span-cite{
+    display:none;
 }
